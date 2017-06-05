@@ -29,9 +29,15 @@
       <file leaf-file-name="orm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/orm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="855">
+              <caret line="260" column="12" lean-forward="false" selection-start-line="260" selection-start-column="12" selection-end-line="260" selection-end-column="12" />
+              <folding>
+                <marker date="1496635008000" expanded="true" signature="4000:4025" ph="select `miss... missing_value" />
+                <marker date="1496635008000" expanded="true" signature="4101:4140" ph="insert into `missing_value`... " />
+                <marker date="1496635008000" expanded="true" signature="4273:4304" ph="update `miss... " />
+                <marker date="1496635008000" expanded="true" signature="4439:4468" ph="delete from " />
+                <marker date="1496635008000" expanded="true" signature="6527:6554" ph="select missi... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -439,9 +445,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/orm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="855">
+          <caret line="260" column="12" lean-forward="false" selection-start-line="260" selection-start-column="12" selection-end-line="260" selection-end-column="12" />
+          <folding>
+            <marker date="1496635008000" expanded="true" signature="4000:4025" ph="select `miss... missing_value" />
+            <marker date="1496635008000" expanded="true" signature="4101:4140" ph="insert into `missing_value`... " />
+            <marker date="1496635008000" expanded="true" signature="4273:4304" ph="update `miss... " />
+            <marker date="1496635008000" expanded="true" signature="4439:4468" ph="delete from " />
+            <marker date="1496635008000" expanded="true" signature="6527:6554" ph="select missi... " />
+          </folding>
         </state>
       </provider>
     </entry>
