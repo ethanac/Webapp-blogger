@@ -20,10 +20,11 @@ def create_pool(loop, **kw):
     __pool = yield from aiomysql.create_pool(
         host=kw.get('host', 'localhost'),
         port=kw.get('port', 3306),
-        user=kw['root'],
-        password=kw[''],
-        db=kw['db'],
-        charset=kw.get('charset', 'uft8'),
+        # unix_socket='/tmp/mysql.sock',
+        user=kw['user'],
+        password=kw['password'],
+        db=kw['database'],
+        charset=kw.get('charset', 'utf8'),
         autocommit=kw.get('autocommit', True),
         maxsize=kw.get('maxsize', 10),
         minsize=kw.get('minsize', 1),
@@ -81,12 +82,12 @@ class Field(object):
 
 
 class StringField(Field):
-    def __init__(self, name=None, primary_key=False, default=None, column_type='varchar(100)'):
-        super().__init__(name, column_type, primary_key, default)
+    def __init__(self, name=None, primary_key=False, default=None, ddl='varchar(100)'):
+        super().__init__(name, ddl, primary_key, default)
 
 
 class BooleanField(Field):
-    def __init__(self, name=None, default=None):
+    def __init__(self, name=None, default=False):
         super().__init__(name, 'boolean', False, default)
 
 
@@ -116,7 +117,7 @@ class ModelMetaclass(type):
         mappings = dict()
         fields = []
         primary_key = None
-        for k,v in attrs.items():
+        for k, v in attrs.items():
             if isinstance(v, Field):
                 logging.info('  found mapping: %s --> %s' % (k, v))
                 mappings[k] = v
@@ -124,9 +125,9 @@ class ModelMetaclass(type):
                 if v.primary_key:
                     if primary_key:
                         raise RuntimeError('Duplicate primary key for field: %s' % k)
-                primary_key = k
-            else:
-                fields.append(k)
+                    primary_key = k
+                else:
+                    fields.append(k)
         if not primary_key:
             raise RuntimeError('Primary key not found')
         for k in mappings.keys():
@@ -137,8 +138,9 @@ class ModelMetaclass(type):
         attrs['__primary_key__'] = primary_key
         attrs['__fields__'] = fields
 
-        attrs['__select__'] = 'select `%s`, %s from `%s`' % (primary_key, ', '.join(escaped_fields))
-        attrs['__insert__'] = 'insert into `%s` (%s, `%s`) values (%s)' % (table_name, ', '.join(escaped_fields), primary_key, create_args_string(len(escaped_fields) + 1))
+        attrs['__select__'] = 'select `%s`, %s from `%s`' % (primary_key, ', '.join(escaped_fields), table_name)
+        attrs['__insert__'] = 'insert into `%s` (%s, `%s`) values (%s)' % (table_name, ', '.join(escaped_fields),
+                                                                           primary_key, create_args_string(len(escaped_fields) + 1))
         attrs['__update__'] = 'update `%s` set %s where `%s`=?' % (table_name, ', '.join(map(lambda f: '`%s`=?' % (mappings.get(f).name or f), fields)), primary_key)
         attrs['__delete__'] = 'delete from `%s` where `%s`=?' % (table_name, primary_key)
 
