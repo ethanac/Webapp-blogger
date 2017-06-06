@@ -4,8 +4,7 @@ create database awesome;
 
 use awesome;
 
-grant SELECT, INSERT, UPDATE, DELETE, on awesome.* to 'www-data'@'localhost'
-identified by 'www-data'
+grant SELECT, INSERT, UPDATE, DELETE on awesome.* to 'www-data'@'localhost' identified by 'www-data';
 
 create table users (
   `id` VARCHAR(50) not NULL,
@@ -14,9 +13,9 @@ create table users (
   `admin` bool not NULL,
   `name` VARCHAR(50) not NULL,
   `image` VARCHAR(500) NOT NULL,
-  `create_at` REAL NOT NULL,
+  `created_at` REAL NOT NULL,
   UNIQUE KEY `idx_email` (`email`),
-  KEY `idx_created_at` (`created_at`)
+  KEY `idx_created_at` (`created_at`),
   PRIMARY KEY (`id`)
 ) engine=innodb DEFAULT charset=utf8;
 
@@ -29,8 +28,8 @@ create table blogs (
   `name` VARCHAR(50) NOT NULL,
   `summary` VARCHAR(200) not NULL,
   `content` mediumtext not NULL,
-  `create_at` REAL NOT NULL,
-  KEY `idx_created_at` (`created_at`)
+  `created_at` REAL NOT NULL,
+  KEY `idx_created_at` (`created_at`),
   PRIMARY KEY (`id`)
 ) engine=innodb DEFAULT charset=utf8;
 
@@ -42,7 +41,7 @@ create table comments (
   `user_name` VARCHAR(50) not NULL,
   `user_image` VARCHAR(500) NOT NULL,
   `content` mediumtext not NULL,
-  `create_at` REAL NOT NULL,
-  KEY `idx_created_at` (`created_at`)
+  `created_at` REAL NOT NULL,
+  KEY `idx_created_at` (`created_at`),
   PRIMARY KEY (`id`)
 ) engine=innodb DEFAULT charset=utf8;
