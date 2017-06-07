@@ -1,14 +1,25 @@
 import orm
-import asyncio
-from models import User, Blog, Comment
+import asyncio, aiomysql
+from models import User
 
 
 def test():
-    loop = asyncio.get_event_loop()
-    yield from orm.create_pool(loop, user='www-data', password='www-data', database='awesome')
+    nloop = asyncio.get_event_loop()
+    aiomysql.create_pool(
+        host='localhost',
+        port='3306',
+        # unix_socket='/tmp/mysql.sock',
+        user='www-data',
+        password='www-data',
+        db='awesome',
+        charset='utf8',
+        autocommit=True,
+        maxsize=10,
+        minsize=1,
+        loop=nloop
+    )
 
-    u = User(name='Test', email='test@example.com', passwd='123456', image='about:blank')
-    yield from u.save()
+    # u = User(name='Test', email='test@example.com', passwd='123456', image='about:blank')
+    # yield from u.save()
 
-for x in test():
-    pass
+test()
