@@ -23,3 +23,5 @@ def test():
     # yield from u.save()
 
 test()
+
+# result of yield from must be saved and used in future.
