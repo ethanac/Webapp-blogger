@@ -56,6 +56,16 @@ def data_factory(app, handler):
     return parse_data
 
 
+@asyncio.coroutine
+def response_factory(app, handler):
+    @asyncio.coroutine
+    def response(request):
+        logging.info('Response handler...')
+        r = await handler(request)
+        if isinstance(r, web.StreamResponse):
+            return r
+
+
 def datetime_filter(t):
     delta = int(time.time() - t)
     if delta < 60:
