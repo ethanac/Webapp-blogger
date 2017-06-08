@@ -56,6 +56,12 @@ def data_factory(app, handler):
     return parse_data
 
 
+def datetime_filter(t):
+    delta = int(time.time() - t)
+    if delta < 60:
+        return u'1 minute ago'
+
+
 def index(request):
     return web.Response(body=b'<h1>Awesome</h1>', content_type='text/html')
 
