@@ -37,7 +37,7 @@ def logger_factory(app, handler):
     def logger(request):
         logging.info('Request: %s %s' % (request.method, request.path))
         # asyncio.sleep(0.3)
-        return asyncio.wait(handler(request))
+        return (yield from handler(request))
     return logger
 
 
@@ -47,12 +47,12 @@ def data_factory(app, handler):
     def parse_data(request):
         if request.method == 'POST':
             if request.content_type.startswith('application/json'):
-                request.__data__ = await request.json()
+                request.__data__ = yield from request.json()
                 logging.info('request json: %s' % str(request.__data__))
             elif request.content_type.startswith('application/x-www-form-urlencoded'):
-                request.__data__ = await request.post()
+                request.__data__ = yield from request.post()
                 logging.info('request form: %s' % str(request.__data__))
-        return (await handler(request))
+        return (yield from handler(request))
     return parse_data
 
 
@@ -61,7 +61,7 @@ def response_factory(app, handler):
     @asyncio.coroutine
     def response(request):
         logging.info('Response handler...')
-        r = await handler(request)
+        r = yield from handler(request)
         if isinstance(r, web.StreamResponse):
             return r
 
