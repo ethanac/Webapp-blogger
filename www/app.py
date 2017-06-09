@@ -101,6 +101,14 @@ def datetime_filter(t):
     delta = int(time.time() - t)
     if delta < 60:
         return u'1 minute ago'
+    if delta < 3600:
+        return u'%s minutes ago' % (delta // 60)
+    if delta < 86400:
+        return u'%s hours ago' % (delta // 6300)
+    if delta < 604800:
+        return u'%s days ago' % (delta // 86400)
+    dt = datetime.fromtimestamp(t)
+    return u'%s/%s/%s' % (dt.month, dt.day, dt.year)
 
 
 def index(request):
