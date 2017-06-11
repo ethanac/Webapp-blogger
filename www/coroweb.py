@@ -110,9 +110,37 @@ class RequestHandler(object):
                     kw = dict(**params)
                 else:
                     return web.HTTPBadRequest('Unsupported Content-Type: %s' % request.content_type)
-
-        r = yield from self._func(**kw)
-        return r
+            if request.method == 'GET':
+                qs = request.query_string
+                if qs:
+                    kw = dict()
+                    for k, v in parse.parse_qs(qs, True).items():
+                        kw[k] = v[0]
+        if kw is None:
+            kw = dict(**request.match_info)
+        else:
+            if not self._has_var_kw_args and self._named_kw_args:
+                copy = dict()
+                for name in self._named_kw_args:
+                    if name in kw:
+                        copy[name] = kw[name]
+                kw = copy
+            for k, v in request.match_info.items():
+                if k in kw:
+                    logging.warning('Duplicate arg name in named arg and kw args: %s' % k)
+                kw[k] = v
+        if self._has_request_arg:
+            kw['request'] = request
+        if self._required_kw_args:
+            for name in self._required_kw_args:
+                if not name in kw:
+                    return web.HTTPBadRequest('Missing argument: %s' % name)
+        logging.info('Call with args: %s' % str(kw))
+        try:
+            r = yield from self._func(**kw)
+            return r
+        except APIError as e:
+            return dict(error=e.error, data=e.data, message=e.message)
 
 
 def add_route(app, fn):
