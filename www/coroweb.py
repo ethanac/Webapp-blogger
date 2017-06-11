@@ -86,11 +86,31 @@ class RequestHandler(object):
     def __init__(self, app, fn):
         self._app = app
         self._func = fn
-
+        self._has_named_kw_args = has_named_kw_args(fn)
+        self._has_var_kw_args = has_var_kw_args(fn)
+        self._has_request_arg = has_request_arg(fn)
+        self._named_kw_args = get_named_kw_args(fn)
+        self._required_kw_args = get_required_kw_args(fn)
 
     @asyncio.coroutine
     def __call__(self, request):
-        kw = {}
+        kw = None
+        if self._has_var_kw_args or self._has_named_kw_args or self._required_kw_args:
+            if request.method == 'POST':
+                if not request.content_type:
+                    return web.HTTPBadRequest('Missing Content-Type!')
+                ct = request.content_type.lower()
+                if ct.startswith('application/json'):
+                    params = yield from request.json()
+                    if not isinstance(params, dict):
+                        return web.HTTPBadRequest('JSON body must be object')
+                    kw = params
+                elif ct.startswith('application/x-www-form-urlencoded') or ct.startswith('multipart/form-data'):
+                    params = yield from request.post()
+                    kw = dict(**params)
+                else:
+                    return web.HTTPBadRequest('Unsupported Content-Type: %s' % request.content_type)
+
         r = yield from self._func(**kw)
         return r
 
