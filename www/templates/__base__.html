@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block meta %}<!-- block meta -->{% endblock %}
+    <title>{% block title %} ? {% endblock %} - Awesome Python Webapp</title>
+    <link rel="stylesheet" href="/static/css/uikit.min.css">
+    <link rel="stylesheet" href="/static/css/uikit.gradient.min.css">
+    <link rel="stylesheet" href="/static/css/awesome.css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/md5.js"></script>
+    <script src="/static/js/uikit.js"></script>
+    <script src="/static/js/awsome.js"></script>
+    {% block beforehead %}<!-- before head -->{% endblock %}
+</head>
+<body>
+    <nav class="uk-navbar uk-navbar-attached uk-margin-bottom">
+        <div class="uk-container uk-container-center">
+            <a href="/" class="uk-container-center">
+                <ul class="uk-navbar-nav">
+                    <li data-url="blogs"><a href="/"><i class="uk-icon-home"></i>Articles</a></li>
+                    <li><a target="_blank" href="#"><i class="uk-icon-book"></i>Tutorials</a></li>
+                    <li><a target="_blank" href="#"><i class="uk-icon-code"></i>Code</a></li>
+                </ul>
+                <div class="uk-navbar-flip">
+                    <ul class="uk-navbar-nav">
+                        {% if user %}
+                        <li class="uk-parent" data-uk-dropdown>
+                            <a href="#0"><i class="uk-icon-user"></i> {{ user.name }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
