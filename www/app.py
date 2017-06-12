@@ -6,7 +6,7 @@ from aiohttp import web
 from jinja2 import Environment, FileSystemLoader
 
 import orm
-from coroweb import add_routes
+from coroweb import get, add_routes, add_static
 
 
 def init_jinja2(app, **kw):
@@ -111,13 +111,24 @@ def datetime_filter(t):
     return u'%s/%s/%s' % (dt.month, dt.day, dt.year)
 
 
+@get('/')
 def index(request):
-    return web.Response(body=b'<h1>Awesome</h1>', content_type='text/html')
+    users = yield from User.find_all()
+    return {
+        '__template__': 'test.html',
+        'users': users
+    }
 
 
 @asyncio.coroutine
 def init(loop):
-    app = web.Application(loop=loop)
+    yield from orm.create_pool(loop=loop, host='127.0.0.1', port=3306, user='www-data', password='www-data', db='awesome')
+    app = web.Application(loop=loop, middlewares=[
+        logger_factory, response_factory
+    ])
+    init_jinja2(app, filters=dict(datetime=datetime_filter))
+    # add_routes(app, 'handler')
+    # add_static(app)
     app.router.add_route('GET', '/', index)
     srv = yield from loop.create_server(app.make_handler(), '127.0.0.1', 9000)
     logging.info('server started at http://127.0.0.1:9000')

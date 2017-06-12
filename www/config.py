@@ -5,6 +5,7 @@ __author__ = 'Hao Zhang'
 
 import config_default
 
+
 class Dict(dict):
     '''
     Simple dict but supoort access as x.y style
