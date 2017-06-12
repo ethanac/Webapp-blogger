@@ -20,7 +20,7 @@ def get(path):
         wrapper.__method__ = 'GET'
         wrapper.__route__ = path
         return wrapper
-    return decorator()
+    return decorator
 
 
 def post(path):
@@ -32,8 +32,8 @@ def post(path):
             return func(*args, **kw)
         wrapper.__method__ = 'POST'
         wrapper.__route__ = path
-        return wrapper()
-    return decorator()
+        return wrapper
+    return decorator
 
 
 def get_required_kw_args(fn):

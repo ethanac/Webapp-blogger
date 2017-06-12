@@ -23,7 +23,7 @@ def create_pool(loop, **kw):
         # unix_socket='/tmp/mysql.sock',
         user=kw['user'],
         password=kw['password'],
-        db=kw['database'],
+        db=kw['db'],
         charset=kw.get('charset', 'utf8'),
         autocommit=kw.get('autocommit', True),
         maxsize=kw.get('maxsize', 10),
@@ -34,7 +34,7 @@ def create_pool(loop, **kw):
 
 @asyncio.coroutine
 def select(sql, args, size=None):
-    log(sql. args)
+    log(sql, args)
     global __pool
     with (yield from __pool) as conn:
         cur = yield from conn.cursor(aiomysql.DictCursor)
@@ -176,7 +176,9 @@ class Model(dict, metaclass=ModelMetaclass):
     @classmethod
     @asyncio.coroutine
     def find_all(cls, where=None, args=None, **kw):
-        '''find objects by where clasuse'''
+        '''
+        find objects by where clause
+        '''
         sql = [cls.__select__]
 
         if where:

@@ -7,12 +7,13 @@ from jinja2 import Environment, FileSystemLoader
 
 import orm
 from coroweb import get, add_routes, add_static
+from models import User
 
 
 def init_jinja2(app, **kw):
     logging.info('init jinja2...')
     options = dict(
-        autoscape=kw.get('autoscape', True),
+        autoescape=kw.get('autoescape', True),
         block_start_string=kw.get('block_start_string', '{%'),
         block_end_string=kw.get('variable_start_string', '%}'),
         variable_start_string=kw.get('variable_start_string', '{{'),
