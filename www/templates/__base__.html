@@ -24,9 +24,9 @@
             </ul>
             <div class="uk-navbar-flip">
                 <ul class="uk-navbar-nav">
-                    {% if user %}
-                    <li class="uk-parent" data-uk-dropdown>
-                        <a href="#0"><i class="uk-icon-user"></i> {{ user.name }}</a>
+                    {% if __user__ %}
+                    <li class="uk-panel-header">
+                        <a href="#0"><i class="uk-icon-user"></i> {{ __user__.name }}</a>
                         <div class="uk-dropdown uk-dropdown-navbar">
                             <ul class="uk-nav uk-nav-navbar">
                                 <li><a href="/signout"><i class="uk-icon-sign-out"></i>Log out</a> </li>
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class="uk-margin-large-top" style="background-color:#35b3ee; border-top: 1px solid #cccccc">
+    <div class="uk-margin-large-top" style="background-color:#EEEEEE; border-top: 1px solid #cccccc">
         <div class="uk-container uk-container-center uk-text-center">
             <div class="uk-panel uk-margin-top uk-margin-bottom">
                 <p>
