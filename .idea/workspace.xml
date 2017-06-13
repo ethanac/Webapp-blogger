@@ -2,224 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b91691a-c298-4d0e-b6e0-3a6c0a45cb6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/accordion.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/accordion.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/accordion.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/accordion.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/accordion.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/accordion.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/autocomplete.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/autocomplete.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/autocomplete.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/autocomplete.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/autocomplete.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/autocomplete.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/datepicker.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/datepicker.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/datepicker.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/datepicker.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/datepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/dotnav.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/dotnav.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/dotnav.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/dotnav.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/dotnav.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/dotnav.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-advanced.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-advanced.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-advanced.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-advanced.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-advanced.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-advanced.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-file.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-file.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-file.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-file.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-file.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-file.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-password.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-password.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-password.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-password.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-password.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-password.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-select.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-select.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-select.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-select.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/form-select.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/htmleditor.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/htmleditor.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/htmleditor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/htmleditor.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/htmleditor.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/htmleditor.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/nestable.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/nestable.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/nestable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/nestable.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/nestable.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/nestable.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/notify.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/notify.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/notify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/notify.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/notify.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/notify.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/placeholder.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/placeholder.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/placeholder.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/placeholder.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/placeholder.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/placeholder.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/progress.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/progress.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/progress.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/progress.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/progress.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/progress.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/search.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/search.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/search.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/search.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/search.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/search.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slidenav.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slidenav.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slidenav.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slidenav.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slidenav.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slidenav.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slider.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slider.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slider.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slider.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slider.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slideshow.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slideshow.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slideshow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slideshow.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slideshow.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/slideshow.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sortable.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sortable.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sortable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sortable.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sortable.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sortable.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sticky.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sticky.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sticky.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sticky.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sticky.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/sticky.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/tooltip.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/tooltip.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/tooltip.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/tooltip.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/tooltip.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/tooltip.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/upload.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/upload.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/upload.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/upload.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/upload.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/components/upload.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.almost-flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.almost-flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.gradient.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.gradient.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/css/uikit.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/accordion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/accordion.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/autocomplete.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/datepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/form-password.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/form-password.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/form-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/form-select.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/grid-parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/grid-parallax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/grid.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/htmleditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/htmleditor.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/lightbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/lightbox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/nestable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/nestable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/notify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/notify.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/pagination.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/pagination.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/parallax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/search.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/slider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/slideset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/slideset.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/slideshow-fx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/slideshow-fx.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/slideshow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/slideshow.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/sortable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/sortable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/sticky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/sticky.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/timepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/timepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/tooltip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/components/upload.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/alert.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/button.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/core.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/cover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/cover.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/dropdown.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/grid.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/modal.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/nav.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/offcanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/offcanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/scrollspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/scrollspy.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/smooth-scroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/smooth-scroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/switcher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/switcher.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/tab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/tab.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/toggle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/toggle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/touch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/touch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/utility.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/core/utility.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/uikit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/uikit.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/__base__.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/__base__.html" afterPath="$PROJECT_DIR$/www/templates/__base__.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -260,9 +43,13 @@
       <file leaf-file-name="__base__.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="62" lean-forward="false" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
-              <folding />
+            <state relative-caret-position="975">
+              <caret line="65" column="115" lean-forward="true" selection-start-line="65" selection-start-column="115" selection-end-line="65" selection-end-column="115" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3038#3044#0" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -385,8 +172,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="962" />
-    <option name="width" value="1598" />
+    <option name="x" value="1064" />
+    <option name="width" value="1496" />
     <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -819,10 +606,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="962" y="0" width="1598" height="1440" extended-state="6" />
+    <frame x="1064" y="0" width="1496" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22715895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21991979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5020432" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1306,9 +1093,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="62" lean-forward="false" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="975">
+          <caret line="65" column="115" lean-forward="true" selection-start-line="65" selection-start-column="115" selection-end-line="65" selection-end-column="115" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3038#3044#0" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
