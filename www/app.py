@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader
 
 import orm
 from coroweb import get, add_routes, add_static
-from models import User
+from models import User, Blog
 
 
 def init_jinja2(app, **kw):
@@ -114,10 +114,17 @@ def datetime_filter(t):
 
 @get('/')
 def index(request):
-    users = yield from User.find_all()
+    # users = yield from User.find_all()
+    summary = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, ' \
+              'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    blogs = [
+        Blog(id='1', name='Test Blog', summary=summary, created_at=time.time()-120),
+        Blog(id='2', name='Something New', summary=summary, created_at=time.time() - 3200),
+        Blog(id='3', name='Learn Javascript', summary=summary, created_at=time.time() - 7200),
+    ]
     return {
-        '__template__': 'test.html',
-        'users': users
+        '__template__': 'blogs.html',
+        'users': blogs
     }
 
 
@@ -128,13 +135,12 @@ def init(loop):
         logger_factory, response_factory
     ])
     init_jinja2(app, filters=dict(datetime=datetime_filter))
-    # add_routes(app, 'handler')
-    # add_static(app)
+    # add_routes(app, 'handlers')
+    add_static(app)
     app.router.add_route('GET', '/', index)
     srv = yield from loop.create_server(app.make_handler(), '127.0.0.1', 9000)
     logging.info('server started at http://127.0.0.1:9000')
     return srv
-
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))

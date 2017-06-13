@@ -1,6 +1,10 @@
-{% extends '__bases__.html' %}
+{% extends '__base__.html' %}
 
 {% block title %}Articles{% endblock %}
+
+{% block beforehead %}
+<script></script>
+{% endblock %}
 
 {% block content %}
 
@@ -8,12 +12,12 @@
         {% for blog in blogs %}
         <article class="uk-article">
             <h2><a href="/blog/{{ blog.id }}">{{ blog.name }}</a></h2>
-            <p class="uk-article-meta">Published at{{ blog.created_at }}</p>
+            <p class="uk-article-meta">Published at{{ blog.created_at|datetime }}</p>
             <p>{{ blog.summary }}</p>
-            <p><a href="/blog/{{ blog.id}}">Continue reading<i class="uk-icon-angle-double-right"></i></a></p>
+            <p><a href="/blog/{{ blog.id }}">Continue reading<i class="uk-icon-angle-double-right"></i></a></p>
         </article>
         <hr class="uk-article-divider">
-        <% endfor %}
+        {% endfor %}
     </div>
 
     <div class="uk-width-medium-1-4">
@@ -22,8 +26,8 @@
             <ul class="uk-list uk-list">
                 <li><i class="uk-icon-thumbs-o-up"></i> <a target="_blank" href="#">Programming</a></li>
                 <li><i class="uk-icon-thumbs-o-up"></i> <a target="_blank" href="#">Reading</a></li>
-                <li><i class="uk-icon-thumbs-o-up"></i> <a target="_blank" href="#">Python Tuturial</a></li>
-                <li><i class="uk-icon-thumbs-o-up"></i> <a target="_blank" href="#">Git Tuturial</a></li>
+                <li><i class="uk-icon-thumbs-o-up"></i> <a target="_blank" href="#">Python Tutorial</a></li>
+                <li><i class="uk-icon-thumbs-o-up"></i> <a target="_blank" href="#">Git Tutorial</a></li>
             </ul>
         </div>
     </div>
