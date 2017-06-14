@@ -12,7 +12,7 @@
         {% for blog in blogs %}
         <article class="uk-article">
             <h2><a href="/blog/{{ blog.id }}">{{ blog.name }}</a></h2>
-            <p class="uk-article-meta">Published at{{ blog.created_at|datetime }}</p>
+            <p class="uk-article-meta">Published at{{ blog.created_at }}</p>
             <p>{{ blog.summary }}</p>
             <p><a href="/blog/{{ blog.id }}">Continue reading<i class="uk-icon-angle-double-right"></i></a></p>
         </article>
