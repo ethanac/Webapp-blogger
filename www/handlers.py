@@ -26,3 +26,9 @@ def index(request):
         '__template__': 'blogs.html',
         'blogs': blogs
     }
+
+
+@post('/api/users')
+def api_register_user(*, email, name, passwd):
+    if not name or not name.strip():
+        raise APIV
