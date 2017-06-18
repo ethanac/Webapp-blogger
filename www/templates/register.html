@@ -36,9 +36,19 @@
                         return $form.showFormError('The two passwords are unmatched!')
                     }
                     var email = this.email.trim().toLowerCase();
-                    $form
+                    $form.postJSON('/api/users', {
+                        name: this.name.trim(),
+                        email: email,
+                        passwd: CryptoJSON.SHA1(email + ':' + this.password1).toString()
+                    }, function (err, r) {
+                        if(err) {
+                            return $form.showFormError(err);
+                        }
+                        return location.assign('/');
+                    });
                 }
             }
-        })
+        });
+        $('#vm').show();
     })
 </script>
