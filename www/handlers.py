@@ -12,6 +12,9 @@ from coroweb import get, post
 from models import User, Comment, Blog, next_id
 from config import configs
 
+COOKIE_NAME = 'awesession'
+_COOKIE_KEY = configs.session.secret
+
 _RE_EMAIL = re.compile(r'^[a-z0-9.\-_]+@[a-z0-9\-_]+(\.[a-z0-9\-_]+){1,4}$')
 _RE_SHA1 = re.compile(r'^[0-9a-f]{40}$')
 
