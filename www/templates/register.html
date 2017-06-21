@@ -24,28 +24,28 @@
                     event.preventDefault();
                     var $form = $('#vm');
                     if (! this.name.trim()) {
-                        return $form.showFormError('Please enter a name')
+                        return $form.show('Please enter a name')
                     }
                     if (! validateEmail(this.email.trim().toLowerCase())) {
-                        return $form.showFormError('Please enter a valid email address')
+                        return $form.show('Please enter a valid email address')
                     }
                     if (this.password1.length < 6) {
-                        return $form.showFormError('Your password must contain at least 6 characters')
+                        return $form.show('Your password must contain at least 6 characters')
                     }
                     if (this.password1 !== this.password2) {
-                        return $form.showFormError('The two passwords are unmatched!')
+                        return $form.show('The two passwords are unmatched!')
                     }
                     var email = this.email.trim().toLowerCase();
-                    $form.postJSON('/api/users', {
+                    $form.post(JSON('/api/users', {
                         name: this.name.trim(),
                         email: email,
-                        passwd: CryptoJSON.SHA1(email + ':' + this.password1).toString()
+                        passwd: CryptoJS.SHA1(email + ':' + this.password1).toString()
                     }, function (err, r) {
                         if(err) {
-                            return $form.showFormError(err);
+                            return $form.show(err);
                         }
                         return location.assign('/');
-                    });
+                    }));
                 }
             }
         });

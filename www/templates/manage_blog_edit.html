@@ -16,14 +16,14 @@
                 submit: function (event) {
                     event.preventDefault();
                     var $form = $('#vm').find('form');
-                    $form.postJSON(action, this.$data, function (err, r) {
+                    $form.post(JSON(action, this.$data, function (err, r) {
                         if (err) {
-                            $form.showFormError(err);
+                            $form.show(TypeError)
                         }
                         else {
                             return location.assign('/api/blogs/' + r.id);
                         }
-                    });
+                    }));
                 }
             }
         });
@@ -31,7 +31,7 @@
     }
     $(function() {
         if (ID) {
-            getJSON('/api/blogs/' + ID, function (err, blog) {
+            $.getJSON('/api/blogs/' + ID, function (err, blog) {
                 if (err) {
                     return fatal(err);
                 }

@@ -2,7 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b91691a-c298-4d0e-b6e0-3a6c0a45cb6a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/aes-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/aes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/cipher-core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/cipher-core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/enc-base64-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/enc-base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/enc-utf16-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/enc-utf16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/evpkdf-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/evpkdf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/format-hex-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/format-hex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/hmac-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/hmac.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/lib-typedarrays-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/lib-typedarrays.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/md5-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-cfb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-cfb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-ctr-gladman-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-ctr-gladman.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-ctr-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-ctr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-ecb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-ecb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-ofb-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/mode-ofb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-ansix923-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-ansix923.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-iso10126-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-iso10126.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-iso97971-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-iso97971.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-nopadding-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-nopadding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-zeropadding-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pad-zeropadding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pbkdf2-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/pbkdf2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/rabbit-legacy-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/rabbit-legacy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/rabbit-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/rabbit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/rc4-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/rc4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/ripemd160-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha1-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha224-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha256-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha3-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha384-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha512-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/tripledes-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/tripledes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/x64-core-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/cryptojs_components/x64-core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/aes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/hmac-md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/hmac-ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/hmac-sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/hmac-sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/hmac-sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/hmac-sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/hmac-sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/hmac-sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/pbkdf2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/rabbit-legacy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/rabbit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/rc4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/ripemd160.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/sha224.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/sha256.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/sha3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/sha384.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/sha512.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static/js/rollups/tripledes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/__base__.html" afterPath="$PROJECT_DIR$/www/templates/__base__.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/manage_blog_edit.html" afterPath="$PROJECT_DIR$/www/templates/manage_blog_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/register.html" afterPath="$PROJECT_DIR$/www/templates/register.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +112,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1254">
-              <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
+              <caret line="146" column="18" lean-forward="false" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -33,8 +125,8 @@
       <file leaf-file-name="handlers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/handlers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+            <state relative-caret-position="1440">
+              <caret line="101" column="28" lean-forward="false" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
               <folding>
                 <element signature="e#92#148#0" expanded="true" />
               </folding>
@@ -45,8 +137,8 @@
       <file leaf-file-name="manage_blog_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1545">
-              <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+            <state relative-caret-position="339">
+              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#div#2;n#form#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#div#3;n#form#0;n#div#3;n#!!top" expanded="true" />
@@ -55,11 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+            <state relative-caret-position="519">
+              <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -68,11 +160,11 @@
       <file leaf-file-name="__base__.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            <state relative-caret-position="255">
+              <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#3140#3146#0" expanded="true" />
+                <element signature="e#3522#3528#0" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -136,6 +228,7 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -144,6 +237,7 @@
       <find>index</find>
       <find>init</find>
       <find>uk-mar</find>
+      <find>$form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,10 +264,11 @@
         <option value="$PROJECT_DIR$/www/app.py" />
         <option value="$PROJECT_DIR$/www/config_default.py" />
         <option value="$PROJECT_DIR$/www/config.py" />
-        <option value="$PROJECT_DIR$/www/templates/register.html" />
-        <option value="$PROJECT_DIR$/www/templates/manage_blog_edit.html" />
         <option value="$PROJECT_DIR$/www/handlers.py" />
+        <option value="$PROJECT_DIR$/www/static/js/jquery.js" />
         <option value="$PROJECT_DIR$/www/templates/__base__.html" />
+        <option value="$PROJECT_DIR$/www/templates/manage_blog_edit.html" />
+        <option value="$PROJECT_DIR$/www/templates/register.html" />
       </list>
     </option>
   </component>
@@ -184,8 +279,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1262" />
-    <option name="width" value="1298" />
+    <option name="x" value="1172" />
+    <option name="width" value="1388" />
     <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -206,6 +301,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,6 +333,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Webapp-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,7 +410,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -303,12 +420,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/www/" />
-      <recent name="$PROJECT_DIR$/www/static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/www/static/js" />
+      <recent name="$PROJECT_DIR$/www/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/" />
       <recent name="$PROJECT_DIR$/www/static" />
     </key>
   </component>
@@ -597,20 +714,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1262" y="0" width="1298" height="1440" extended-state="6" />
+    <frame x="1172" y="0" width="1388" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29815102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26801154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5020432" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950467" sideWeight="0.4979568" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.4979568" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39985642" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39985642" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -637,30 +754,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <marker date="1497234961000" expanded="true" signature="4047:4072" ph="select `miss... missing_value" />
-            <marker date="1497234961000" expanded="true" signature="4160:4199" ph="insert into `missing_value`... " />
-            <marker date="1497234961000" expanded="true" signature="4407:4438" ph="update `miss... " />
-            <marker date="1497234961000" expanded="true" signature="4573:4602" ph="delete from " />
-            <marker date="1497234961000" expanded="true" signature="6678:6705" ph="select missi... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/coroweb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -938,13 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/static/js/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/blogs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -983,7 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,41 +1087,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#2;n#form#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#3;n#form#0;n#div#3;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3140#3146#0" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/handlers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+        <state relative-caret-position="1440">
+          <caret line="101" column="28" lean-forward="false" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
           <folding>
             <element signature="e#92#148#0" expanded="true" />
           </folding>
@@ -1046,7 +1100,62 @@
     <entry file="file://$PROJECT_DIR$/www/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
-          <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
+          <caret line="146" column="18" lean-forward="false" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/static/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153795">
+          <caret line="10255" column="4" lean-forward="false" selection-start-line="10255" selection-start-column="4" selection-end-line="10255" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/static/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/static/js/cryptojs_components/aes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/__base__.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3522#3528#0" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#2;n#form#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#3;n#form#0;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="40" />
           <folding />
         </state>
       </provider>
