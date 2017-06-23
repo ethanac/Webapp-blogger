@@ -32,6 +32,17 @@ def check_admin(request):
         raise APIError()
 
 
+def get_page_index(page_str):
+    p = 1
+    try:
+        p = int(page_str)
+    except ValueError as e:
+        pass
+    if p < 1:
+        p = 1
+    return p
+
+
 @asyncio.coroutine
 def cookie2user(cookie_str):
     '''
@@ -89,6 +100,20 @@ def index(request):
     return {
         '__template__': 'blogs.html',
         'blogs': blogs
+    }
+
+
+@get('/blog/{id}')
+def get_blog(id):
+    blog = yield from Blog.find(id)
+    comments = yield from Comment.find_all('blog_id=?', [id], orderBy='created_at desc')
+    for c in comments:
+        c.html_content = text2html(c.content)
+    blog.html_content = markdown2.markdown(blog.content)
+    return {
+        '__template__': 'blog.html',
+        'blog': blog,
+        'comments': comments
     }
 
 
@@ -151,6 +176,12 @@ def authenticate(*, email, passwd):
     r.content_type = 'application/json'
     r.body = json.dump(user, ensure_ascii=False).encode('utf-8')
     return r
+
+
+@get('/api/blogs/{id}')
+def api_get_blog(*, id):
+    blog = yield from Blog.find(id)
+    return blog
 
 
 @post('/api/blogs')
