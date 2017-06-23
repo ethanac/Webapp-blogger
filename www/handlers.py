@@ -6,7 +6,7 @@ __author__ = 'Hao Zhang'
 ' url handlers '
 
 import re, time, json, logging, hashlib, base64, asyncio
-from apis import APIError, APIResourceNotFoundError, APIValueError
+from apis import APIError, APIResourceNotFoundError, APIValueError, Page
 from aiohttp import web
 from coroweb import get, post
 from models import User, Comment, Blog, next_id
@@ -105,6 +105,25 @@ def manage_create_blog():
         '__template__': 'manage_blog_edit.html',
         'id': '',
         'action': '/api/blogs'
+    }
+
+
+@get('/api/blogs')
+def api_blogs(*, page='1'):
+    page_index = get_page_index(page)
+    num = yield from Blog.find_number('count(id)')
+    p = Page(num, page_index)
+    if num == 0:
+        return dict(page=p, blogs=())
+    blogs = yield from Blog.find_all(orderBy='created_at desc', limit=(p.offset, p.limit))
+    return dict(page=p, blogs=blogs)
+
+
+@get('/manage/blogs')
+def manage_blogs(*, page='1'):
+    return {
+        '__template__': 'manage_blogs.html',
+        'page_index': get_page_index(page)
     }
 
 
