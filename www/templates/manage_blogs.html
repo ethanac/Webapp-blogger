@@ -1,0 +1,57 @@
+{% extends '__base__.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block beforehead %}}
+
+<script>
+    function initVM(data) {
+        var vm = new Vue({
+            el: '#vm',
+            data: {
+                blogs: data.blogs,
+                page: data.page
+            },
+            methods: {
+                edit_blog: function (blog) {
+                    location.assign('/manage/blogs/edit?id=' + blog.id);
+                },
+                delete_blog: function (blog) {
+                    if (confirm('Confirm delete "' + blog.name + '"? Deleted item cannot be recovered! ')) {
+                        $.post(JSON('/appi/blogs/' + blogs.id + '/delete', function (err, r) {
+                            if (err) {
+                                return alert(err.message || err.err || err);
+                            }
+                            refresh();
+                        }));
+                    }
+                }
+            }
+        });
+        $('#vm').show();
+    }
+
+    $(function () {
+        $.getJSON('/api/blogs', {
+            page: {{ page_index }}
+        }, function (err, results) {
+            if (err) {
+                return fatal(err);
+            }
+            $('#loading').hide();
+            initVM(results);
+        });
+    });
+</script>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="uk-width-1-1 uk-margin-bottom">
+    <div class="uk-panel uk-panel-box">
+        <ul class="uk-breadcrumb">
+            
+        </ul>
+    </div>
+</div>
