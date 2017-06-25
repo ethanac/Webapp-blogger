@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="uk-height-1-1" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin - Aweseome Blog Site</title>
+    <link rel="stylesheet" href="/static/css/uikit.min.css">
+    <link rel="stylesheet" href="/static/css/uikit.gradient.min.css">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/sha1.min.js"></script>
+    <script src="/static/js/uikit.min.js"></script>
+    <script src="/static/js/vue.js"></script>
+    <script src="/static/js/awesome.js"></script>
+    <script>
+        $(function () {
+            var vmAuth = new Vue({
+                el: '#vm',
+                data: {
+                    email: '',
+                    passwd: ''
+                },
+                methods: {
+                    submit: function (event) {
+                        event.preventDefault();
+                        var
+                            $form = $('#vm'),
+                            email = this.email.trim().toLowerCase(),
+                            data = {
+                                email: email,
+                                passwd: this.passwd==="" ? '': CryptoJS.SHA1(email + ':' + this.passwd).toString()
+                            };
+                        $form.post(JSON('/api/authenticate', data, function (err, result) {
+                            if (!err) {
+                                location.assign('/');
+                            }
+                        }));
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
