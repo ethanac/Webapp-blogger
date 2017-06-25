@@ -27,6 +27,12 @@ def user2cookie(user, max_age):
     return '-'.join(l)
 
 
+def text2html(text):
+    lines = map(lambda s: '<p>%s</p>' % s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'),
+                filter(lambda s: s.strip() != '', text.split('\n')))
+    return ''.join(lines)
+
+
 def check_admin(request):
     if request.__user__ is None or not request.__user__.admin:
         raise APIError()
@@ -83,6 +89,8 @@ def auth_factory(app, handler):
             if user:
                 logging.info('set current user: %s' % user.email)
                 request.__user__ = user
+        if request.path.startswith('/manage/') and (request.__user__ is None or not request.__user__.admin):
+            return web.HTTPFound('/signin')
         return (yield from handler(request))
     return auth
 
@@ -122,6 +130,22 @@ def register():
     return {
         '__template__': 'register.html'
     }
+
+
+@get('/signin')
+def signin():
+    return {
+        '__template__': 'signin.html'
+    }
+
+
+@get('/signout')
+def signout(request):
+    referer = request.headers.get('Referer')
+    r = web.HTTPFound(referer or '/')
+    r.set_cookie(COOKIE_NAME, '-deleted-', max_age=0, httponly=True)
+    logging.info('user signed out.')
+    return r
 
 
 @get('/manage/blogs/create')
