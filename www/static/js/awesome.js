@@ -81,3 +81,37 @@ if (! Number.prototype.toDataTime) {
         return arr.join('');
     };
 }
+
+function enCodeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+}
+
+function parseQueryString() {
+    var
+        q = location.search,
+        r = {},
+        i, pos, s, qs;
+    if (q && q.charAt(0)==='?') {
+        qs = q.substring(1).split('&');
+        for (i=0; i<qs.length; i++) {
+            s = qs[i];
+            pos = s.indexOf('=');
+            if (pos <= 0) {
+                continue;
+            }
+            r[s.substring(0, pos)] = decodeURIComponent(s.substring(pos+1)).replace(/\+/g, ' ');
+        }
+    }
+    return r;
+}
+
+function gotoPage(i) {
+    var r = parseQueryString();
+    r.page = i;
+    location.assign('?' + $.param(r));
+}
