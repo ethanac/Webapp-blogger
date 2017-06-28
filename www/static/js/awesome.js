@@ -166,3 +166,9 @@ function toSmartDate(timestamp) {
     }
     return s;
 }
+
+$(function () {
+    $('.x-smartdate').each(function () {
+        $(this).removeClass('x-smartdate').text(toSmartDate($(this).attr('date')));
+    });
+});
