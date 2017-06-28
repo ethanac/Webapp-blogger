@@ -115,3 +115,54 @@ function gotoPage(i) {
     r.page = i;
     location.assign('?' + $.param(r));
 }
+
+function refresh() {
+    var
+        t = new Date().getTime(),
+        url = location.pathname;
+    if (location.search) {
+        url = url + location.search + '&t=' + t;
+    }
+    else {
+        url = url + '?t=' + t;
+    }
+    location.assign(url);
+}
+
+function toSmartDate(timestamp) {
+    if (typeof(timestamp) === 'string') {
+        timestamp = parseInt(timestamp);
+    }
+    if (isNaN(timestamp)) {
+        return '';
+    }
+
+    var
+        today = new Date(g_time),
+        now = today.getTime(),
+        s = '1 minute ago',
+        t = now - timestamp;
+    if (t > 604800000) {
+        var that = new Date(timestamp);
+        var
+            y = that.getFullYear(),
+            m = that.getMonth() + 1,
+            d = that.getDate(),
+            hh = that.getHours(),
+            mm = that.getMinutes();
+        s = y===today.getFullYear() ? '' : y + ' year ';
+        s = s + m + ' months ' + d + ' days ' + hh + ':' + (mm < 10 ? '0' : '') + mm;
+    }
+    else if (t >= 86400000) {
+        // 1 - 6 days ago
+        s = Math.floor(t / 86400000) + ' days ago.';
+    }
+    else if (t >= 3600000) {
+        // 1 - 23 hours ago
+        s = Math.floor(t / 3600000) + ' hours ago.';
+    }
+    else if ( t >= 60000) {
+        s = Math.floor(t / 60000) + ' minutes ago.';
+    }
+    return s;
+}
