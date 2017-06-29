@@ -243,7 +243,18 @@ $(function () {
             });
         },
         showFormLoading: function (isLoading) {
-            
+            return this.each(function () {
+                var
+                    $form = $(this),
+                    $submit = $form && $form.find('button[type=submit]'),
+                    $buttons = $form && $form.find('button'),
+                    $i = $submit && $submit.find('i'),
+                    iconClass = $i && $i.attr('class');
+                if (! $form.is('form')) {
+                    console.error('Cannot call showFormLoading() on non-form object.');
+                    return;
+                }
+            })
         }
     })
 })
