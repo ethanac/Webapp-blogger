@@ -284,3 +284,29 @@ $(function () {
         }
     });
 });
+
+// ajax submit form
+
+function _httpJSON(method, url, data, callback) {
+    var opt = {
+        type: method,
+        dataType: 'json'
+    };
+    if (method==='GET') {
+        opt.url = url + '?' + data;
+    }
+    if (method==='POST') {
+        opt.url = url;
+        opt.data = JSON.stringify(data || {});
+        opt.contentType = 'application/json';
+    }
+    $.ajax(opt).done(function (r) {
+        if (r && r.error) {
+            return callback(r);
+        }
+        return callback(null, r);
+    }).fail(function (jqXHR, textStatus) {
+        return callback({'error': 'http_bad_response', 'data': '' + jqXHR.status, 'message': 'Network is bad (HTTP ' +
+        jqXHR.status + ')'});
+    });
+}
