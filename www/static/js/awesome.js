@@ -254,7 +254,33 @@ $(function () {
                     console.error('Cannot call showFormLoading() on non-form object.');
                     return;
                 }
-            })
+                if (!iconClass || iconClass.indexOf('uk-icon') < 0) {
+                    console.warn('Icon <i class="uk-icon-*>" not found.');
+                    return;
+                }
+                if (isLoading) {
+                    $buttons.attr('disabled', 'disabled');
+                    $i && $i.removeClass('uk-icon-spinner').addClass('uk-icon-spin');
+                }
+            });
+        },
+        postJSON: function (url, data, callback) {
+            if (arguments.length===2) {
+                callback = data;
+                data = {};
+            }
+            return this.each(function () {
+                var $form = $(this);
+                $form.showFormError();
+                $form.showFormLoading(true);
+                _httpJSON('POST', url, data, function (err, r) {
+                    if (err) {
+                        $form.showFormError(err);
+                        $form.showFormLoading(false);
+                    }
+                    callback && callback(err, r);
+                });
+            });
         }
-    })
-})
+    });
+});
