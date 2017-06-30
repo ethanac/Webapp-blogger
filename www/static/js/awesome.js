@@ -310,3 +310,26 @@ function _httpJSON(method, url, data, callback) {
         jqXHR.status + ')'});
     });
 }
+
+function getJSON(url, data, callback) {
+    if (arguments.length===2) {
+        callback = data;
+        data = {};
+    }
+    if (typeof (data) === 'object') {
+        var arr = [];
+        $.each(data, function (k, v) {
+            arr.push(k + '=' + encodeURIComponent(v));
+        });
+        data = arr.join('&');
+    }
+    _httpJSON('GET', url, data, callback);
+}
+
+function postJSON(url, data, callback) {
+    if (arguments.length===2) {
+        callback = data;
+        data = {};
+    }
+    _httpJSON('POST', url, data, callback);
+}
