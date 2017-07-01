@@ -43,8 +43,8 @@
       <file leaf-file-name="handlers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/handlers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="1059">
+              <caret line="235" column="36" lean-forward="false" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
               <folding>
                 <element signature="e#92#148#0" expanded="true" />
               </folding>
@@ -67,14 +67,14 @@
       <file leaf-file-name="awesome.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/static/js/awesome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="372" column="0" lean-forward="true" selection-start-line="372" selection-start-column="0" selection-end-line="372" selection-end-column="0" />
+            <state relative-caret-position="516">
+              <caret line="376" column="16" lean-forward="true" selection-start-line="376" selection-start-column="16" selection-end-line="376" selection-end-column="16" />
               <folding>
-                <marker date="1498880706000" expanded="true" signature="4631:4636" ph="&amp;" />
-                <marker date="1498880706000" expanded="true" signature="4656:4662" ph="&quot;" />
-                <marker date="1498880706000" expanded="true" signature="4687:4692" ph="'" />
-                <marker date="1498880706000" expanded="true" signature="4712:4716" ph="&lt;" />
-                <marker date="1498880706000" expanded="true" signature="4736:4740" ph="&gt;" />
+                <marker date="1498881134000" expanded="true" signature="4631:4636" ph="&amp;" />
+                <marker date="1498881134000" expanded="true" signature="4656:4662" ph="&quot;" />
+                <marker date="1498881134000" expanded="true" signature="4687:4692" ph="'" />
+                <marker date="1498881134000" expanded="true" signature="4712:4716" ph="&lt;" />
+                <marker date="1498881134000" expanded="true" signature="4736:4740" ph="&gt;" />
               </folding>
             </state>
           </provider>
@@ -83,8 +83,8 @@
       <file leaf-file-name="manage_blog_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="465">
+              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#div#2;n#form#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#div#3;n#form#0;n#div#3;n#!!top" expanded="true" />
@@ -155,6 +155,7 @@
       <find>init</find>
       <find>uk-mar</find>
       <find>$form</find>
+      <find>fata</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -954,17 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#2;n#form#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#3;n#form#0;n#div#3;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/manage_blogs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1515">
@@ -978,16 +968,6 @@
         <state relative-caret-position="1440">
           <caret line="96" column="19" lean-forward="false" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/handlers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#92#148#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,16 +996,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1059">
+          <caret line="235" column="36" lean-forward="false" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
+          <folding>
+            <element signature="e#92#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/manage_blog_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#2;n#form#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#3;n#form#0;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/static/js/awesome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="372" column="0" lean-forward="true" selection-start-line="372" selection-start-column="0" selection-end-line="372" selection-end-column="0" />
+        <state relative-caret-position="516">
+          <caret line="376" column="16" lean-forward="true" selection-start-line="376" selection-start-column="16" selection-end-line="376" selection-end-column="16" />
           <folding>
-            <marker date="1498880706000" expanded="true" signature="4631:4636" ph="&amp;" />
-            <marker date="1498880706000" expanded="true" signature="4656:4662" ph="&quot;" />
-            <marker date="1498880706000" expanded="true" signature="4687:4692" ph="'" />
-            <marker date="1498880706000" expanded="true" signature="4712:4716" ph="&lt;" />
-            <marker date="1498880706000" expanded="true" signature="4736:4740" ph="&gt;" />
+            <marker date="1498881134000" expanded="true" signature="4631:4636" ph="&amp;" />
+            <marker date="1498881134000" expanded="true" signature="4656:4662" ph="&quot;" />
+            <marker date="1498881134000" expanded="true" signature="4687:4692" ph="'" />
+            <marker date="1498881134000" expanded="true" signature="4712:4716" ph="&lt;" />
+            <marker date="1498881134000" expanded="true" signature="4736:4740" ph="&gt;" />
           </folding>
         </state>
       </provider>

@@ -406,3 +406,40 @@ function _bindSubmit($form) {
     });
     $form.find('button[type=submit]').removeAttr('disabled');
 }
+
+$(function () {
+    $('form').each(function () {
+        var $form = $(this);
+        if ($form.attr('action-url')) {
+            _bindSubmit($form);
+        }
+    });
+});
+
+$(function () {
+    if (location.pathname === '/' || location.pathname.indexOf('/blog')===0) {
+        $('li[data-url=blogs]').addClass('uk-active');
+    }
+});
+
+function _display_error($obj, err) {
+    if ($obj.is(':visible')) {
+        $obj.hide();
+    }
+    var msg = err.message || String(err);
+    var L = ['<div class="uk-alert uk-alert-danger">'];
+    L.push('<p>Error: ');
+    L.push(msg);
+    L.push('</p><p>Code: ');
+    L.push(err.error || '500');
+    L.push('</p></div>');
+    $obj.html(L.join('')).slideDown();
+}
+
+function error(err) {
+    _display_error($('#error'), err);
+}
+
+function fatal(err) {
+    _display_error($('loading'), err);
+}
