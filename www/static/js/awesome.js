@@ -368,3 +368,41 @@ function redirect(url) {
     console.log('redirect to: ' + url);
     location.assign(url);
 }
+
+// init
+
+function _bindSubmit($form) {
+    $form.submit(function (event) {
+        event.preventDefault();
+        showFormError($form, null);
+        var
+            fn_error =  $form.attr('fn-error'),
+            fn_success = $form.attr('fn-success'),
+            fn_data = $form.attr('fn-data'),
+            data = fn_data ? window[fn_data]($form) : $form.serialize();
+        var
+            $submit = $form.find('button[type=submit]'),
+            $i = $submit.find('i'),
+            iconClass = $i.attr('class');
+        if(!iconClass || iconClass.indexOf('uk-icon') < 0) {
+            $i = undefined;
+        }
+        $submit.attr('disabled', 'disabled');
+        $i && $i.addClass('uk-icon-spinner').addClass('uk-icon-spin');
+        postJSON($form.attr('action-url'), data, function (err, result) {
+            $i && $i.removeClass('uk-icon-spinner').removeClass('uk-icon-spin');
+            if (err) {
+                console.log('postJSON failed: ' + JSON.stringify(err));
+                $submit.removeAttr('disabled');
+                fn_error ? fn_error() : showFormError($form, err);
+            }
+            else {
+                var r = fn_success ? window[fn_success](result) : false;
+                if (r===false) {
+                    $submit.removeAttr('disabled');
+                }
+            }
+        });
+    });
+    $form.find('button[type=submit]').removeAttr('disabled');
+}

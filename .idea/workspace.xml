@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b91691a-c298-4d0e-b6e0-3a6c0a45cb6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/static/js/awesome.js" afterPath="$PROJECT_DIR$/www/static/js/awesome.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,14 +67,14 @@
       <file leaf-file-name="awesome.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/static/js/awesome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1338">
-              <caret line="368" column="25" lean-forward="false" selection-start-line="368" selection-start-column="25" selection-end-line="368" selection-end-column="25" />
+            <state relative-caret-position="753">
+              <caret line="372" column="0" lean-forward="true" selection-start-line="372" selection-start-column="0" selection-end-line="372" selection-end-column="0" />
               <folding>
-                <marker date="1498880077000" expanded="true" signature="4631:4636" ph="&amp;" />
-                <marker date="1498880077000" expanded="true" signature="4656:4662" ph="&quot;" />
-                <marker date="1498880077000" expanded="true" signature="4687:4692" ph="'" />
-                <marker date="1498880077000" expanded="true" signature="4712:4716" ph="&lt;" />
-                <marker date="1498880077000" expanded="true" signature="4736:4740" ph="&gt;" />
+                <marker date="1498880706000" expanded="true" signature="4631:4636" ph="&amp;" />
+                <marker date="1498880706000" expanded="true" signature="4656:4662" ph="&quot;" />
+                <marker date="1498880706000" expanded="true" signature="4687:4692" ph="'" />
+                <marker date="1498880706000" expanded="true" signature="4712:4716" ph="&lt;" />
+                <marker date="1498880706000" expanded="true" signature="4736:4740" ph="&gt;" />
               </folding>
             </state>
           </provider>
@@ -1019,14 +1018,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/static/js/awesome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1338">
-          <caret line="368" column="25" lean-forward="false" selection-start-line="368" selection-start-column="25" selection-end-line="368" selection-end-column="25" />
+        <state relative-caret-position="753">
+          <caret line="372" column="0" lean-forward="true" selection-start-line="372" selection-start-column="0" selection-end-line="372" selection-end-column="0" />
           <folding>
-            <marker date="1498880077000" expanded="true" signature="4631:4636" ph="&amp;" />
-            <marker date="1498880077000" expanded="true" signature="4656:4662" ph="&quot;" />
-            <marker date="1498880077000" expanded="true" signature="4687:4692" ph="'" />
-            <marker date="1498880077000" expanded="true" signature="4712:4716" ph="&lt;" />
-            <marker date="1498880077000" expanded="true" signature="4736:4740" ph="&gt;" />
+            <marker date="1498880706000" expanded="true" signature="4631:4636" ph="&amp;" />
+            <marker date="1498880706000" expanded="true" signature="4656:4662" ph="&quot;" />
+            <marker date="1498880706000" expanded="true" signature="4687:4692" ph="'" />
+            <marker date="1498880706000" expanded="true" signature="4712:4716" ph="&lt;" />
+            <marker date="1498880706000" expanded="true" signature="4736:4740" ph="&gt;" />
           </folding>
         </state>
       </provider>
