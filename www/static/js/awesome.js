@@ -333,3 +333,38 @@ function postJSON(url, data, callback) {
     }
     _httpJSON('POST', url, data, callback);
 }
+
+// extends Vue
+
+if (typeof (Vue)!=='undefined') {
+    Vue.filter('datatime', function (value) {
+        var d = value;
+        if (typeof(value)==='number') {
+            d = new Date(value);
+        }
+        return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + ' ' + d.getHours() + ':' + d.getMinutes();
+    });
+    Vue.component('pagination', {
+        template: '<ul class="uk-pagination">' +
+            '<li v-if="! has_previous" class="uk-disabled"><span><i class="uk-icon-angle-double-left"></i></span></li>' +
+                '<li v-if="has_previous"><a v-attr="onclick:\'gotoPage(\' + (page_index-1) + \')\'" href="#0"><i class="uk-icon-angle-double-left"></i></a></li>' +
+                '<li class="uk-active"><span v-text="page_index"></span></li>' +
+                '<li v-if="! has_next" class="uk-disabled"><span><i class="uk-icon-angle-double-right"></i></span></li>' +
+                '<li v-if="has_next"><a v-attr="onclick:\'gotoPage(\' + (page_index+1) + \')\'" href="#0"><i class="uk-icon-angle-double-right"></i></a></li>' +
+            '</ul>'
+    });
+}
+
+function redirect(url) {
+    var
+        hash_pos = url.indexOf('#'),
+        query_pos = url.indexOf('?'),
+        hash = '';
+    if (hash_pos >= 0) {
+        hash = url.substring(hash_pos);
+        url = url.substring(0, hash_pos);
+    }
+    url = url + (query_pos >= 0 ? '&' : '?') + 't=' + new Date().getTime() + hash;
+    console.log('redirect to: ' + url);
+    location.assign(url);
+}
