@@ -374,7 +374,7 @@ function redirect(url) {
 function _bindSubmit($form) {
     $form.submit(function (event) {
         event.preventDefault();
-        showFormError($form, null);
+        this.showFormError($form, null);
         var
             fn_error =  $form.attr('fn-error'),
             fn_success = $form.attr('fn-success'),
@@ -394,7 +394,7 @@ function _bindSubmit($form) {
             if (err) {
                 console.log('postJSON failed: ' + JSON.stringify(err));
                 $submit.removeAttr('disabled');
-                fn_error ? fn_error() : showFormError($form, err);
+                fn_error ? fn_error() : this.showFormError($form, err);
             }
             else {
                 var r = fn_success ? window[fn_success](result) : false;
